@@ -31,5 +31,8 @@ public class PlayerController : MonoBehaviour
         verticalLookRotation = Mathf.Clamp(verticalLookRotation, -90f, 90f);
 
         cameraHolder.localEulerAngles = new Vector3(verticalLookRotation, 0f, 0f);
+
+        Debug.Log("Player rot: " + transform.eulerAngles);
+        Debug.Log("CameraHolder local rot: " + cameraHolder.localEulerAngles);
     }
 }
